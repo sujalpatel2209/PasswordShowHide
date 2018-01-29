@@ -9,7 +9,6 @@ export default class App extends React.Component {
         return (
             <InputField
                 name='password'
-                showButton={true}
             />
         );
     }
