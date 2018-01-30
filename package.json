@@ -1,5 +1,5 @@
 {
-  "name": "passwordShowReact",
+  "name": "password-show-hide-field-react",
   "version": "1.0.0",
   "description": "Show and Hide Password text",
   "main": "index.js",
