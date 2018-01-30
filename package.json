@@ -1,6 +1,6 @@
 {
   "name": "password-show-hide-field-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show and Hide Password text",
   "main": "index.js",
   "author": "Sujal Patel<sujalpatel022@gmail.com>",
@@ -8,6 +8,21 @@
   "scripts": {
     "start": "webpack-dev-server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujalpatel2209/PasswordShowHide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sujalpatel2209/PasswordShowHide/issues"
+  },
+  "homepage": "https://github.com/sujalpatel2209/PasswordShowHide/issues#readme",
+  "keywords": [
+    "react-component",
+    "password-hide-show",
+    "input",
+    "inputfield",
+    "page"
+  ],
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
