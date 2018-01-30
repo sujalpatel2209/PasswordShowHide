@@ -1,13 +1,12 @@
 import React from 'react';
 
 
-class InputField extends React.Component {
+class PasswordField extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            showText: 0,
-            inputValue: ''
+            showText: 0
         }
     }
 
@@ -37,7 +36,6 @@ class InputField extends React.Component {
                 {
                     this.state.showText
                         ? <input
-                            id='passField'
                             type='text'
                             name={this.props.name}
                             style={this.props.fieldStyle}/>
@@ -53,7 +51,7 @@ class InputField extends React.Component {
 }
 
 // Set Default Props Values
-InputField.defaultProps = {
+PasswordField.defaultProps = {
     name: 'password',
     showBtn: true,
     showBtnName: 'Show',
@@ -62,4 +60,4 @@ InputField.defaultProps = {
     fieldStyle: null
 }
 
-export default InputField;
+export default PasswordField;
