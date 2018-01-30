@@ -5,37 +5,46 @@ class InputField extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             showText: 0,
             inputValue: ''
         }
     }
 
+    changeField() {
+        this.state.showText
+            ? this.setState({
+                showText: 0
+            })
+            : this.setState({
+                showText: 1
+            })
+    }
+
     render() {
 
-        // Define password input field
         const btn = (
-            <button>{this.props.showBtnName}</button>
+            <button
+                style={this.props.buttonStyle}
+                onClick={this.changeField.bind(this)}>{(this.state.showText)
+                ? this.props.hideBtnName
+                : this.props.showBtnName}
+            </button>
         );
-
-        // OnChange Function change state value
-
-        function changeValue() {
-            console.log("test");
-            /*this.setValue = ({
-                inputValue: val
-            });*/
-        }
 
         return (
             <div>
                 {
                     this.state.showText
-                        ? <input type='text' /*value={this.state.inputValue}*/ onChange={this.changeValue} name={this.props.name}
-                                 style={this.props.style}/>
-                        : <input type='password' /*value={this.state.inputValue}*/ onChange={this.changeValue} name={this.props.name}
-                                 style={this.props.style}/>
+                        ? <input
+                            id='passField'
+                            type='text'
+                            name={this.props.name}
+                            style={this.props.fieldStyle}/>
+                        : <input
+                            type='password'
+                            name={this.props.name}
+                            style={this.props.fieldStyle}/>
                 }
                 {(this.props.showBtn) ? btn : null}
             </div>
@@ -48,7 +57,9 @@ InputField.defaultProps = {
     name: 'password',
     showBtn: true,
     showBtnName: 'Show',
-    hideBtnName: 'Hide'
+    hideBtnName: 'Hide',
+    buttonStyle: null,
+    fieldStyle: null
 }
 
 export default InputField;
