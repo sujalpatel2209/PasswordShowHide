@@ -1,6 +1,6 @@
 {
   "name": "password-show-hide-field-react",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Show and Hide Password text",
   "main": "index.js",
   "author": "Sujal Patel<sujalpatel022@gmail.com>",
@@ -26,11 +26,11 @@
   ],
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
-    "path": "^0.12.7"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
